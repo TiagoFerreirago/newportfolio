@@ -5,9 +5,10 @@
     gap:24px;
     grid-template-areas:
     "header"
-    "botons"
+    "buttons"
     "experience"
     "info";
+
 }
 @media (min-width: 768px){
     .container{
@@ -22,6 +23,54 @@
         "header info"
         "experience not"
         "not-bottons";
-        
+    }
+}
+.social-buttons{
+
+    display: flex;
+    align-items: center;
+    gap:24px;
+
+    a{
+       height: 50px;
+       width: 50px;
+       border: 1px solid white;
+       border-radius: 50px; 
+       cursor: pointer;
+
+       display:flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+}
+.buttons {
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    grid-area: buttons;
+    width: 100%;
+
+    .bottons-primary {
+        background: linear-gradient(to right,green, blue);
+        border-radius: 24px;
+        width: 325px;
+        padding: 12px;
+        text-align: center;
+
+        color: rgba(255, 255, 255, 0.685);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 30px;
+        text-transform: uppercase;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
     }
 }
